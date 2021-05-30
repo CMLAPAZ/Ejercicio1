@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ejercicio-1</title>
+</head>
+<body>
+    <h2>Para esa distancia</h2>
+	<script>
+    
+        var dist;
+        
+        dist=prompt('Ingrese la distancia en metros a recorrer: ','')
+        dist=parseInt(dist); // parseInt >  
+        
+        if (dist==0 || dist<1001) { 
+            document.write('Debe ir a pie');
+        }
+        else {
+            if (dist>1000 && dist<10001)  {
+                document.write('Debe ir en bici');
+            }
+            else {
+                if (dist>10000 && dist<30001)  {
+                document.write('Debe ir en colectivo');
+                }
+                else  {
+                    if (dist>10000 && dist<30001)  {
+                    document.write('Debe ir en colectivo');
+                    }
+                    else
+                    {document.write('Debe ir en avion');}
+                }
+            }
+        }
+        
+    </script>
+
+</body>
+</html>
